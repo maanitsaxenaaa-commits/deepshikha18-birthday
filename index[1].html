@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 18th Birthday Deepshikha 💗</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family: 'Trebuchet MS', sans-serif;
+background: linear-gradient(135deg,#ffd6e8,#ffc2d9,#ffe5f0);
+overflow-x:hidden;
+color:#fff;
+text-align:center;
+min-height:100vh;
+}
+.container{
+padding:60px 20px;
+position:relative;
+z-index:2;
+}
+h1{
+font-size:3rem;
+margin-top:30px;
+text-shadow:0 3px 10px rgba(0,0,0,.2);
+animation: fadeIn 2s ease;
+}
+.age{
+font-size:1.5rem;
+margin:15px 0 30px;
+}
+.card{
+max-width:850px;
+margin:30px auto;
+background:rgba(255,255,255,0.15);
+backdrop-filter: blur(12px);
+border-radius:25px;
+padding:35px;
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+line-height:1.8;
+font-size:1.1rem;
+animation: float 4s ease-in-out infinite;
+}
+.end{
+margin-top:40px;
+font-size:1.4rem;
+font-weight:bold;
+}
+.sign{
+margin-top:25px;
+font-size:1.2rem;
+opacity:.9;
+}
+.emoji{
+position:fixed;
+top:100%;
+font-size:24px;
+animation: rise linear forwards;
+pointer-events:none;
+z-index:1;
+}
+@keyframes rise{
+to{
+transform:translateY(-120vh) rotate(360deg);
+opacity:0;
+}
+}
+@keyframes fadeIn{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:translateY(0)}
+}
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-8px)}
+}
+button{
+margin-top:30px;
+padding:12px 24px;
+border:none;
+border-radius:25px;
+background:#ff69b4;
+color:white;
+font-size:1rem;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+button:hover{transform:scale(1.05)}
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🎂 Happy 18th Birthday, Deepshikha 💗</h1>
+    <div class="age">✨ Welcome to Chapter 18 ✨</div>
+
+    <div class="card">
+        <p>
+        Some people enter life quietly and somehow leave their presence in every little corner of it. 
+        Maybe you don't even realize it, but the way you smile, the way you exist, and the warmth you carry 
+        has a strange way of making moments feel softer and brighter.
+        </p>
+        <br>
+        <p>
+        Today isn't just another birthday — it's your 18th birthday, a beautiful milestone, the beginning of 
+        new dreams, new memories and a whole new chapter waiting for you. And honestly… I just hope this year 
+        gives you every happiness your heart deserves.
+        </p>
+        <br>
+        <p>
+        I hope you keep smiling the same way, keep believing in yourself, and never forget how special and 
+        valuable you truly are. Life may not always be easy, but I hope you always find reasons to laugh, 
+        to grow, and to shine exactly the way you do.
+        </p>
+        <br>
+        <p>
+        Thank you for simply being you. For your presence, your vibe, and the little things that make you 
+        unforgettable. Some people become memories, but some become feelings — and maybe that's what makes 
+        them special.
+        </p>
+        <br>
+        <p>
+        So here's to your beautiful heart, your dreams, your journey and every magical moment waiting ahead.
+        May 18 treat you gently, bring you peace, excitement and memories worth holding forever.
+        </p>
+
+        <div class="end">
+        💖 18 years of you… and the world got a little prettier. 💖
+        </div>
+
+        <div class="sign">
+        — With warmth, Maanit ✨
+        </div>
+    </div>
+
+    <button onclick="window.scrollTo({top:0,behavior:'smooth'})">💗 One More Smile 💗</button>
+</div>
+
+<script>
+const emojis=["💗","🎂","✨","🌸","💖","🎉","🩷","🥳"];
+function createEmoji(){
+ let e=document.createElement("div");
+ e.classList.add("emoji");
+ e.innerHTML=emojis[Math.floor(Math.random()*emojis.length)];
+ e.style.left=Math.random()*100+"vw";
+ e.style.animationDuration=(4+Math.random()*4)+"s";
+ document.body.appendChild(e);
+ setTimeout(()=>e.remove(),8000);
+}
+setInterval(createEmoji,250);
+</script>
+
+</body>
+</html>
